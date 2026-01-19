@@ -15,21 +15,165 @@
   </head>
   <body class="font-[Inter]">
     <header>
-      <nav class="bg-[#412567] max-[576px]:">
-        <div class="flex items-center justify-between max-w-[1200px] mx-auto py-4 px-2">
-          <h2 class="text-4xl font-bold text-[#ffffff]">Tech<span class=" bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] bg-clip-text text-transparent">Wave</span></h2>
-          <ul class="flex gap-8 text-base text-[#FFFFFF] font-medium max-[577px]:hidden">
-            <li class="hover:text-zinc-500 duration-400"><a href="">About</a></li>
-            <li class="hover:text-zinc-500 duration-400"><a href="">Episodes</a></li>
-            <li class="hover:text-zinc-500 duration-400"><a href="">Host</a></li>
+      <!-- Navbar Section  -->
+      <nav class="bg-[#1A0C30]">
+        <div
+          class="flex items-center justify-between max-w-[1200px] mx-auto py-4 px-2"
+        >
+          <h2 class="text-4xl font-bold text-[#ffffff]">
+            Tech<span
+              class="bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] bg-clip-text text-transparent"
+              >Wave</span
+            >
+          </h2>
+          <ul
+            class="flex gap-8 text-base text-[#FFFFFF] font-medium max-[577px]:hidden"
+          >
+            <li class="hover:text-zinc-500 duration-400">
+              <a href="">About</a>
+            </li>
+            <li class="hover:text-zinc-500 duration-400">
+              <a href="">Episodes</a>
+            </li>
+            <li class="hover:text-zinc-500 duration-400">
+              <a href="">Host</a>
+            </li>
           </ul>
-          <button class="px-4 py-3 text-base font-semibold text-[#FFFFFF] rounded-full cursor-pointer animate-pulse
-          bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] max-[577px]:hidden">
-            Subscribe &nbsp;<img class="inline" src="./assets/Vector.png" alt="" />
+          <button
+            class="px-4 py-3 text-base font-semibold text-[#FFFFFF] rounded-full cursor-pointer animate-pulse bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] max-[577px]:hidden"
+          >
+            Subscribe &nbsp;<img
+              class="inline"
+              src="./assets/Vector.png"
+              alt=""
+            />
           </button>
-          <img class="min-[576px]:hidden mr-3" src="./assets/hamburger-menu.png" alt="">
+          <img
+            class="min-[577px]:hidden mr-3"
+            src="./assets/hamburger-menu.png"
+            alt=""
+          />
         </div>
       </nav>
+      <hr class="text-[#412567]" />
+      <!-- Banner Section  -->
+      <section
+        class="bg-[url('./assets/hero-bg.png')] bg-center pt-[100px] pb-5 text-center bg-no-repeat bg-cover min-h-[500px] max-[577px]:"
+      >
+        <div class="mx-auto">
+          <div class="relative">
+            <img
+              class="mx-auto max-w-[350px] h-auto w-full max-[577px]:max-h-[300px] max-[577px]:max-w-[300px]"
+              src="./assets/hero-circle.png"
+              alt=""
+            />
+            <img
+              src="./assets/microphone.png"
+              alt=""
+              class="absolute top-1/2 left-1/2 w-24 h-auto -translate-x-1/2 -translate-y-1/2 max-[577px]:max-h-[100px] max-[577px]:max-w-20"
+            />
+            <button
+              class="absolute top-1/20 left-11/20 py-2 px-4 text-[18px] font-semibold text-[#1A0B2E] bg-[#00ff88] rounded-full animate-bounce"
+            >
+              NEW
+            </button>
+          </div>
+          <h1 class="text-white font-extrabold text-[60px] mt-10">TechWave</h1>
+          <p class="text-white mb-6">
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
+          <div>
+            <button
+              class="px-5 py-3 text-base font-semibold text-[#FFFFFF] rounded-full cursor-pointer animate-pulse bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] mr-3"
+            >
+              <img class="inline" src="./assets/spotify.png" alt="" />&nbsp;
+              Listen on Spotify
+            </button>
+            <button
+              class="px-5 py-3 text-base font-semibold text-[#00FF88] border border-[#00FF88] rounded-full cursor-pointer"
+            >
+              <img class="inline" src="./assets/message.png" alt="" />&nbsp;
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
     </header>
+    <main>
+      <!-- About Section  -->
+      <section class="bg-[#1A0B2E] py-[120px]">
+        <div class="max-w-[1200px] mx-auto text-center px-3">
+          <h2 class="text-[48px] text-white font-bold mb-4">About the Podcast</h2>
+          <p class="text-white leading-7 mb-6">
+            TechWave is your go-to podcast for staying ahead in the fast-paced
+            world of technology. We break down complex topics into digestible
+            insights, explore productivity strategies that actually work, and
+            share stories of personal growth from industry leaders.
+          </p>
+          <p class="text-white leading-5 mb-20">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+          <hr class="text-[#412567]" />
+          <div class="grid grid-cols-4 justify-between gap-3 pt-20 max-[800px]:grid-cols-2">
+            <div>
+              <h2 class="text-[#00FF88] text-[48px] font-black">150K+</h2>
+              <p class="leading-5 text-white uppercase">Monthly Listeners</p>
+            </div>
+            <div>
+              <h2 class="text-[#00FF88] text-[48px] font-black">200+</h2>
+              <p class="leading-5 text-white uppercase">Episodes Published</p>
+            </div>
+            <div>
+              <h2 class="text-[#00FF88] text-[48px] font-black">4.9★</h2>
+              <p class="leading-5 text-white uppercase">Average Rating</p>
+            </div>
+            <div>
+              <h2 class="text-[#00FF88] text-[48px] font-black">50+</h2>
+              <p class="leading-5 text-white uppercase">Industry Experts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why Choose Section  -->
+       <section class="bg-[#230E3D] py-[120px] max-[800px]:py-10">
+        <div class="max-w-[1200px] mx-auto px-3 text-center">
+          <h2 class="text-white text-[48px] font-bold mb-10 max-[800px]:mb-4">Why Choose TechWave</h2>
+
+
+          <div class="grid grid-cols-3 gap-7 max-[800px]:grid-cols-1">
+
+
+            <div class="row-span-2 bg-[#35116540] rounded-4xl p-10 text-start max-[800px]:col-span-2">
+              <img src="./assets/headphone.png" alt="">
+              <h4 class="text-[24px] font-bold text-white py-4">Premium Audio Quality</h4>
+              <p class="text-[#AA9FB8] leading-6">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+            </div>
+
+            <div class="col-span-2 bg-[#35116540] rounded-4xl p-10 text-start">
+              <img src="./assets/location.png" alt="">
+              <h4 class="text-[24px] font-bold text-white py-4">Mobile Friendly</h4>
+              <p class="text-[#AA9FB8] leading-6">Listen on the go with seamless mobile experience and offline downloads.</p>
+            </div>
+
+            <div class="col-span-2 bg-[#35116540] rounded-4xl p-10 text-start">
+              <img src="./assets/power.png" alt="">
+              <h4 class="text-[24px] font-bold text-white py-4">Global Community</h4>
+              <p class="text-[#AA9FB8] leading-6">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+            </div>
+
+            <div class="col-span-2 bg-[#35116540] rounded-4xl p-10 text-start">
+              <img src="./assets/resource.png" alt="">
+              <h4 class="text-[24px] font-bold text-white py-4">Exclusive Interviews</h4>
+              <p class="text-[#AA9FB8] leading-6">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+            </div>
+
+            <div class="bg-[#35116540] rounded-4xl p-10 text-start max-[800px]:col-span-2">
+              <img src="./assets/headphone.png" alt="">
+              <h4 class="text-[24px] font-bold text-white py-4">Rich Resources</h4>
+              <p class="text-[#AA9FB8] leading-6">Access show notes, transcripts, and additional learning materials for every episode.</p>
+            </div>
+          </div>
+        </div>
+       </section>
+    </main>
   </body>
 </html>
