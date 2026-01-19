@@ -1,12 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>Pranto Dutta | Assignment-2</title>
-</head>
-<body>
-    <h1 class="text-9xl">Assignment-2</h1>
-</body>
+  </head>
+  <body class="font-[Inter]">
+    <header>
+      <nav class="bg-[#412567] max-[576px]:">
+        <div class="flex items-center justify-between max-w-[1200px] mx-auto py-4 px-2">
+          <h2 class="text-4xl font-bold text-[#ffffff]">Tech<span class=" bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] bg-clip-text text-transparent">Wave</span></h2>
+          <ul class="flex gap-8 text-base text-[#FFFFFF] font-medium max-[577px]:hidden">
+            <li class="hover:text-zinc-500 duration-400"><a href="">About</a></li>
+            <li class="hover:text-zinc-500 duration-400"><a href="">Episodes</a></li>
+            <li class="hover:text-zinc-500 duration-400"><a href="">Host</a></li>
+          </ul>
+          <button class="px-4 py-3 text-base font-semibold text-[#FFFFFF] rounded-full cursor-pointer animate-pulse
+          bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] max-[577px]:hidden">
+            Subscribe &nbsp;<img class="inline" src="./assets/Vector.png" alt="" />
+          </button>
+          <img class="min-[576px]:hidden mr-3" src="./assets/hamburger-menu.png" alt="">
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
