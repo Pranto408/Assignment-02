@@ -16,7 +16,7 @@
   <body class="font-[Inter]">
     <header>
       <!-- Navbar Section  -->
-      <nav class="bg-[#1A0C30]">
+      <nav class="bg-[#1A0C30] group">
         <div
           class="flex items-center justify-between max-w-[1200px] mx-auto py-4 px-2"
         >
@@ -27,44 +27,52 @@
             >
           </h2>
           <ul
-            class="flex gap-8 text-base text-[#FFFFFF] font-medium max-[577px]:hidden"
+            class="flex gap-8 text-base text-[#FFFFFF] font-medium max-[576px]:hidden"
           >
-            <li class="hover:text-zinc-500 duration-400">
-              <a href="">About</a>
-            </li>
-            <li class="hover:text-zinc-500 duration-400">
-              <a href="">Episodes</a>
-            </li>
-            <li class="hover:text-zinc-500 duration-400">
-              <a href="">Host</a>
-            </li>
+            <li class="hover:text-zinc-500"><a href="">About</a></li>
+            <li class="hover:text-zinc-500"><a href="">Episodes</a></li>
+            <li class="hover:text-zinc-500"><a href="">Host</a></li>
           </ul>
           <button
-            class="px-4 py-3 text-base font-semibold text-[#FFFFFF] rounded-full cursor-pointer animate-pulse bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] max-[577px]:hidden"
+            class="px-4 py-3 text-base font-semibold text-[#FFFFFF] rounded-full cursor-pointer bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] max-[576px]:hidden"
           >
-            Subscribe &nbsp;<img
-              class="inline"
-              src="./assets/Vector.png"
-              alt=""
-            />
+            Subscribe&nbsp;
+            <img class="inline" src="./assets/Vector.png" alt="" />
           </button>
           <img
-            class="min-[577px]:hidden mr-3"
+            class="min-[577px]:hidden mr-3 cursor-pointer"
             src="./assets/hamburger-menu.png"
             alt=""
           />
         </div>
+        <div
+          class="min-[577px]:hidden max-h-0 overflow-hidden group-hover:max-h-[300px]  duration-300  bg-[#1A0C30]"
+        >
+          <ul class="flex flex-col gap-4 px-4 py-5 text-white text-center">
+            <li class="hover:text-zinc-400"><a href="">About</a></li>
+            <li class="hover:text-zinc-400"><a href="">Episodes</a></li>
+            <li class="hover:text-zinc-400"><a href="">Host</a></li>
+            <li>
+              <button
+                class="px-6 py-3 rounded-full cursor-pointer font-semibold bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))]"
+              >
+                Subscribe&nbsp;
+            <img class="inline" src="./assets/Vector.png" alt="" />
+              </button>
+            </li>
+          </ul>
+        </div>
       </nav>
+
       <hr class="text-[#412567]" />
       <!-- Banner Section  -->
       <section
-        class="bg-[url('./assets/hero-bg.png')] bg-center pt-[100px] pb-5 text-center bg-no-repeat bg-cover max-[600px]:bg-[url('./assets/small-hero-bg.png')]
-        max-[600px]:pt-10"
+        class="bg-[url('./assets/hero-bg.png')] bg-center pt-[100px] pb-5 text-center bg-no-repeat bg-cover max-[600px]:bg-[url('./assets/small-hero-bg.png')] max-[600px]:pt-10"
       >
         <div class="mx-auto">
           <div class="relative">
             <img
-              class="mx-auto max-w-[350px] h-auto w-full max-[600px]:max-h-[300px] max-[600px]:max-w-[300px]"
+              class="mx-auto max-w-[350px] h-auto w-full max-[600px]:max-h-[250px] max-[600px]:max-w-[250px]"
               src="./assets/hero-circle.png"
               alt=""
             />
@@ -92,7 +100,7 @@
               Listen on Spotify
             </button>
             <button
-              class="px-5 py-3 text-base font-semibold text-[#00FF88] border border-[#00FF88] rounded-full cursor-pointer"
+              class="px-5 py-3 text-base font-semibold text-[#00FF88] border border-[#00FF88] rounded-full cursor-pointer hover:shadow-[0_0_5px_#00FF88]"
             >
               <img class="inline" src="./assets/message.png" alt="" />&nbsp;
               Subscribe
@@ -393,7 +401,9 @@
             >Wave</span
           >
         </h2>
-        <ul class="grid grid-cols-4 gap-2 mb-10 mt-12 max-[600px]:grid-cols-2 max-[600px]:mb-5 max-[600px]:mt-4">
+        <ul
+          class="grid grid-cols-4 gap-2 mb-10 mt-12 max-[600px]:grid-cols-2 max-[600px]:mb-5 max-[600px]:mt-4"
+        >
           <li>
             <a href="">
               <p>
