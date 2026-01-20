@@ -58,12 +58,13 @@
       <hr class="text-[#412567]" />
       <!-- Banner Section  -->
       <section
-        class="bg-[url('./assets/hero-bg.png')] bg-center pt-[100px] pb-5 text-center bg-no-repeat bg-cover"
+        class="bg-[url('./assets/hero-bg.png')] bg-center pt-[100px] pb-5 text-center bg-no-repeat bg-cover max-[600px]:bg-[url('./assets/small-hero-bg.png')]
+        max-[600px]:pt-10"
       >
         <div class="mx-auto">
           <div class="relative">
             <img
-              class="mx-auto max-w-[350px] h-auto w-full max-[577px]:max-h-[300px] max-[577px]:max-w-[300px]"
+              class="mx-auto max-w-[350px] h-auto w-full max-[600px]:max-h-[300px] max-[600px]:max-w-[300px]"
               src="./assets/hero-circle.png"
               alt=""
             />
@@ -102,7 +103,7 @@
     </header>
     <main>
       <!-- About Section  -->
-      <section class="bg-[#1A0B2E] py-[120px]">
+      <section class="bg-[#1A0B2E] py-[120px] max-[800px]:py-10">
         <div class="max-w-[1200px] mx-auto text-center px-3">
           <h2 class="text-[48px] text-white font-bold mb-4">
             About the Podcast
@@ -113,13 +114,13 @@
             insights, explore productivity strategies that actually work, and
             share stories of personal growth from industry leaders.
           </p>
-          <p class="text-white leading-5 mb-20">
+          <p class="text-white leading-5 mb-20 max-[800px]:mb-10">
             Join thousands of young professionals and tech enthusiasts who start
             their day with TechWave.
           </p>
           <hr class="text-[#412567]" />
           <div
-            class="grid grid-cols-4 justify-between gap-3 pt-20 max-[800px]:grid-cols-2"
+            class="grid grid-cols-4 justify-between gap-3 pt-20 max-[800px]:grid-cols-2 max-[800px]:pt-5"
           >
             <div>
               <h2 class="text-[#00FF88] text-[48px] font-black">150K+</h2>
@@ -212,7 +213,7 @@
         </div>
       </section>
       <!-- Featured Section  -->
-      <section class="bg-[#1A0B2E] py-[120px]">
+      <section class="bg-[#1A0B2E] py-[120px] max-[800px]:py-10">
         <div class="max-w-[1200px] mx-auto px-3">
           <h2
             class="text-white text-center text-[48px] font-bold mb-10 max-[800px]:mb-6"
@@ -333,18 +334,20 @@
         </div>
       </section>
       <!-- Host Section  -->
-      <section class="bg-[#1A0B2E] pb-[120px]">
+      <section class="bg-[#1A0B2E] pb-[120px] max-[800px]:pb-10">
         <div class="max-w-[1200px] mx-auto px-3">
           <h2
             class="text-white text-center text-[48px] font-bold mb-10 max-[800px]:mb-6"
           >
             Meet the Host
           </h2>
-          <div class="bg-[#250D44] text-start rounded-4xl gap-6 px-10 py-12 flex max-[800px]:flex-col items-center max-[800px]:text-center">
+          <div
+            class="bg-[#250D44] text-start rounded-4xl gap-6 px-10 py-12 flex max-[800px]:flex-col items-center max-[800px]:text-center"
+          >
             <div>
               <img class="max-w-[220px]" src="./assets/host.png" alt="" />
             </div>
-            <div class="py-1 text-white max-[800px]:flex flex-col items-center ">
+            <div class="py-1 text-white max-[800px]:flex flex-col items-center">
               <h4 class="text-[24px] font-bold">Alex Kumar</h4>
               <p class="my-4 text-[#A89EB4]">
                 Tech entrepreneur, productivity expert, and lifelong learner.
@@ -380,5 +383,58 @@
         </div>
       </section>
     </main>
+    <footer
+      class="bg-[url('./assets/footer-bg.png')] bg-center h-[390px] bg-cover w-full bg-no-repeat flex justify-center items-center max-[600px]:bg-[url('./assets/small-footer-bg.png')] max-[600px]:h-[248px]"
+    >
+      <div class="text-white text-center">
+        <h2 class="text-5xl font-bold text-[#ffffff]">
+          Tech<span
+            class="bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] bg-clip-text text-transparent"
+            >Wave</span
+          >
+        </h2>
+        <ul class="grid grid-cols-4 gap-2 mb-10 mt-12 max-[600px]:grid-cols-2 max-[600px]:mb-5 max-[600px]:mt-4">
+          <li>
+            <a href="">
+              <p>
+                <img class="inline" src="./assets/spotify.png" alt="" />&nbsp;
+                Spotify
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p>
+                <img
+                  class="inline"
+                  src="./assets/apple-podcast.png"
+                  alt=""
+                />&nbsp; Apple Podcasts
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p>
+                <img
+                  class="inline"
+                  src="./assets/youtube-podcast.png"
+                  alt=""
+                />&nbsp; YouTube
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p>
+                <img class="inline" src="./assets/twitter.png" alt="" />&nbsp;
+                Twitter
+              </p>
+            </a>
+          </li>
+        </ul>
+        <p>© 2026 TechWave Podcast. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
